@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.runit.mvvmsimplemockup.ui.main.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:ignore="NestedWeights">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/field_00"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(0, 0)}"
+                android:text='@{mainViewModel.fields["00"]}' />
+
+            <TextView
+                android:id="@+id/field_01"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(0, 1)}"
+                android:text='@{mainViewModel.fields["01"]}' />
+
+            <TextView
+                android:id="@+id/field_02"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(0, 2)}"
+                android:text='@{mainViewModel.fields["02"]}' />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/field_10"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(1, 0)}"
+                android:text='@{mainViewModel.fields["10"]}' />
+
+            <TextView
+                android:id="@+id/field_11"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(1, 1)}"
+                android:text='@{mainViewModel.fields["11"]}' />
+
+            <TextView
+                android:id="@+id/field_12"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(1, 2)}"
+                android:text='@{mainViewModel.fields["12"]}' />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/field_20"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(2, 0)}"
+                android:text='@{mainViewModel.fields["20"]}' />
+
+            <TextView
+                android:id="@+id/field_21"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(2, 1)}"
+                android:text='@{mainViewModel.fields["21"]}' />
+
+            <TextView
+                android:id="@+id/field_22"
+                style="@style/FieldView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{() -> mainViewModel.onClickedCellAt(2, 2)}"
+                android:text='@{mainViewModel.fields["22"]}' />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

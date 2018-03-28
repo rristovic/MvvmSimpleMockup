@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MVVM Mockup</string>
+    <string name="player1_hint">First player</string>
+    <string name="player2_hint">Second player</string>
+    <string name="game_dialog_title">New game</string>
+    <string name="done">Done</string>
+    <string name="game_dialog_empty_name">Please enter a name.</string>
+    <string name="game_dialog_same_names">Names cannot be the same.</string>
+    <string name="game_end_dialog_headline">The winner is</string>
+</resources>
